@@ -16,3 +16,5 @@ def buscar_usuario(nome_usuario):
 
 if __name__ == "__main__":
     conectar_banco()
+
+    #algo diferente
