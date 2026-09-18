@@ -1,10 +1,3 @@
-### Criando a Esteira de Segurança (Pipeline)
-Agora vamos criar a automação. O GitHub Actions exige que o arquivo seja salvo em um diretório muito específico.
-Crie as pastas .github/workflows/ (atenção ao ponto inicial e ao 's' no final) e dentro dela crie o arquivo YAML:
-
-Arquivo `.github/workflows/devsecops.yml`
-
-```yaml
 name: Pipeline DevSecOps - Aula Pratica
 
 # A esteira roda sempre que um Pull Request for aberto para a main
@@ -41,4 +34,3 @@ jobs:
       run: |
         echo "Verificando CVEs no requirements.txt..."
         pip-audit -r requirements.txt
-```
